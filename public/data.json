@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/7GbnBVq/New-Project-14.jpg",
+      "price": ""
+    },
+    {
+      "id": 2,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/SJxmjsz/New-Project-13.jpg",
+      "price": ""
+    },
+    {
+      "id": 3,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/x5Dn5xD/New-Project-12.jpg",
+      "price": ""
+    },
+    {
+      "id": 4,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/P99CCsy/New-Project-11.jpg",
+      "price": ""
+    },
+    {
+      "id": 5,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/LtxFmPx/New-Project-10.jpg",
+      "price": ""
+    },
+    {
+      "id": 6,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/Z1h696B/New-Project-9.jpg",
+      "price": ""
+    },
+    {
+      "id": 7,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/XXRB2wq/New-Project-8.jpg",
+      "price": ""
+    },
+    {
+      "id": 8,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/zZmtw8j/New-Project-7.jpg",
+      "price": ""
+    },
+    {
+      "id": 9,
+      "name": "",
+      "detail": "This is a academic course",
+      "img": "https://i.ibb.co/vwP0m48/New-Project-6.jpg",
+      "price": ""
+    }
+  ]

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="row my-5 bg-dark">
+    <div className="row mt-5 bg-dark">
       <div className="col-sm-12 col-md-4 col-xs-12">
         <h1 className="text-white p-3">Customer Service</h1>
         <h4 className="text-white">Shipping Policy</h4>

@@ -9,14 +9,24 @@ import Home from './Component/Homepage/Home/Home';
 import Header from './Component/Homepage/Header/Header';
 import Footer from './Component/Homepage/Footer/Footer';
 
+import Register from './Component/Register/Register';
+import Login from './Component/Login/Login';
+
+
+
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header></Header>
-       
         <Switch>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
         <Route path="/">
           <Home></Home>
         </Route>
@@ -31,4 +41,5 @@ function App() {
 }
 
 export default App;
+
 

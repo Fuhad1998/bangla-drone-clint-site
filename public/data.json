@@ -1,65 +1,74 @@
 [
-    {
-      "id": 1,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/7GbnBVq/New-Project-14.jpg",
-      "price": ""
-    },
-    {
-      "id": 2,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/SJxmjsz/New-Project-13.jpg",
-      "price": ""
-    },
-    {
-      "id": 3,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/x5Dn5xD/New-Project-12.jpg",
-      "price": ""
-    },
-    {
-      "id": 4,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/P99CCsy/New-Project-11.jpg",
-      "price": ""
-    },
-    {
-      "id": 5,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/LtxFmPx/New-Project-10.jpg",
-      "price": ""
-    },
-    {
-      "id": 6,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/Z1h696B/New-Project-9.jpg",
-      "price": ""
-    },
-    {
-      "id": 7,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/XXRB2wq/New-Project-8.jpg",
-      "price": ""
-    },
-    {
-      "id": 8,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/zZmtw8j/New-Project-7.jpg",
-      "price": ""
-    },
-    {
-      "id": 9,
-      "name": "",
-      "detail": "This is a academic course",
-      "img": "https://i.ibb.co/vwP0m48/New-Project-6.jpg",
-      "price": ""
-    }
-  ]
+  {
+    "id": 1,
+    "name": "AirHaven",
+    "detail": "It is supper supper classic drone",
+    "img": "https://i.ibb.co/7GbnBVq/New-Project-14.jpg",
+    "price": "1200",
+    "model": "Dr120"
+  },
+  {
+    "id": 2,
+    "name": "Ample Aircraft",
+    "detail": "This is a good drone",
+    "img": "https://i.ibb.co/SJxmjsz/New-Project-13.jpg",
+    "price": "1280",
+    "model": "Daa121"
+  },
+  {
+    "id": 3,
+    "name": "Apollo Earthly",
+    "detail": "This is normal drone",
+    "img": "https://i.ibb.co/x5Dn5xD/New-Project-12.jpg",
+    "price": "1400",
+    "model": "Dae122"
+  },
+  {
+    "id": 4,
+    "name": "Clever Technologies",
+    "detail": "It is supper supper classic drone",
+    "img": "https://i.ibb.co/P99CCsy/New-Project-11.jpg",
+    "price": "1599",
+    "model": "Dct123"
+  },
+  {
+    "id": 5,
+    "name": "Cloud Tag",
+    "detail": "This is normal drone",
+    "img": "https://i.ibb.co/LtxFmPx/New-Project-10.jpg",
+    "price": "1899",
+    "model": "Dct124"
+  },
+  {
+    "id": 6,
+    "name": "Cloud Walk",
+    "detail": "It is supper supper classic drone",
+    "img": "https://i.ibb.co/Z1h696B/New-Project-9.jpg",
+    "price": "1799",
+    "model": "Daw125"
+  },
+  {
+    "id": 7,
+    "name": "Delray Drone",
+    "detail": "This is normal drone ",
+    "img": "https://i.ibb.co/XXRB2wq/New-Project-8.jpg",
+    "price": "1340",
+    "model": "Ddd126"
+  },
+  {
+    "id": 8,
+    "name": "Den Of Drones",
+    "detail": "It is supper supper classic drone",
+    "img": "https://i.ibb.co/zZmtw8j/New-Project-7.jpg",
+    "price": "2099",
+    "model": "Ddd127"
+  },
+  {
+    "id": 9,
+    "name": "Discount Drones",
+    "detail": "This is a world class drone",
+    "img": "https://i.ibb.co/vwP0m48/New-Project-6.jpg",
+    "price": "2299",
+    "model": "Ddd1228"
+  }
+]

@@ -1,12 +1,17 @@
 .header-link{
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 700;
+    font-size: large;
 }
 .header-link:hover{
-    color: white;
+    color: black;
     font-weight: 900;
 }
 .logout-btn{
     border: none;
+}
+.header-name{
+    font-size: larger;
+    font-weight: 700;
 }

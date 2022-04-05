@@ -9,6 +9,7 @@ import Login from "./Component/Login/Login";
 import AuthProvider from "./Context/AuthProvider";
 import Purchase from "./Component/Homepage/Purchase/Purchase";
 import Expertise from "./Component/Expertise/Expertise";
+import Trips from "./Component/Homepage/Trips/Trips";
 
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/expertise">
               <Expertise></Expertise>
+            </Route>
+            <Route path="/trips">
+              <Trips></Trips>
             </Route>
             <Route path="/">
               <Home></Home>

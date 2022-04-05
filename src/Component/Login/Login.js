@@ -41,7 +41,7 @@ const Login = () => {
           value="Login"
         />
         <br />
-        <button onClick={signInUsingGoogle} className="btn-submit input-btn btn-primary fs-5 rounded">
+        <button onClick={signInUsingGoogle} className="btn-submit input-btn btn-primary fs-5 rounded ">
           Google Sign-in
         </button>
         <br />

@@ -1,0 +1,17 @@
+.order-from{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.order-from input{
+    width: 320px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+/* .from-div{
+    width: 380px;
+} */

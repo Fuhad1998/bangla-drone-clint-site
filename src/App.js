@@ -10,6 +10,9 @@ import AuthProvider from "./Context/AuthProvider";
 import Purchase from "./Component/Homepage/Purchase/Purchase";
 import Expertise from "./Component/Expertise/Expertise";
 import Trips from "./Component/Homepage/Trips/Trips";
+import MyOrders from "./Component/MyOrders/MyOrders";
+import ManageAllOrders from "./Component/ManageAllOrders/ManageAllOrders";
+import AddANewService from "./Component/AddANewService/AddANewService";
 
 
 function App() {
@@ -34,6 +37,15 @@ function App() {
             </Route>
             <Route path="/trips">
               <Trips></Trips>
+            </Route>
+            <Route path="/orders">
+              <MyOrders></MyOrders>
+            </Route>
+            <Route path="/manageAllOrders">
+              <ManageAllOrders></ManageAllOrders>
+            </Route>
+            <Route path="/addAnewService">
+              <AddANewService></AddANewService>
             </Route>
             <Route path="/">
               <Home></Home>

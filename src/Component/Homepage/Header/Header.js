@@ -17,7 +17,7 @@ const Header = () => {
         </Link>
 
         {user.email ? (
-          <button className="header-link bg-dark logout-btn" onClick={logOut}>
+          <button className="header-link  logout-btn" onClick={logOut}>
             Log-Out
           </button>
         ) : (
@@ -48,6 +48,21 @@ const Header = () => {
               <Link className="header-link px-2" to="/trips">
                 TIPS & ARTICLE
               </Link>
+              {
+                user?.email && <Link className="header-link px-2" to="/orders">
+                My-Orders
+              </Link>
+              }
+              {
+                user?.email && <Link className="header-link px-2" to="/manageAllOrders">
+                Manage-All-Orders
+              </Link>
+              }
+              {
+                user?.email && <Link className="header-link px-2" to="/addAnewService">
+                Add-A-New-Service
+              </Link>
+              }
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>

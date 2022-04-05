@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import './Service.css'
 
 const Service = ({ service }) => {
   const { name, detail, img, price, model } = service;
@@ -20,7 +22,7 @@ const Service = ({ service }) => {
             <br />
           </Card.Title>
           <button type="button" className="btn-primary service-btn">
-            Buy Now
+            <Link className="btn-primary service-btn link-btn" to="/purchase">Buy Now</Link>
           </button>
         </Card.Body>
       </Card>

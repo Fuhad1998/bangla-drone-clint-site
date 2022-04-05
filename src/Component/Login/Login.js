@@ -1,11 +1,20 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import UseAuth from "../Hooks/UseAuth";
 import './Login.css'
 
 const Login = () => {
+ 
+  const {signInUsingGoogle, loginUser} = UseAuth();
+
+
+
+
+
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
+    loginUser(data.email, data.password)
     alert("login success");
   };
   return (
@@ -32,7 +41,7 @@ const Login = () => {
           value="Login"
         />
         <br />
-        <button className="btn-submit input-btn btn-primary fs-5 rounded">
+        <button onClick={signInUsingGoogle} className="btn-submit input-btn btn-primary fs-5 rounded">
           Google Sign-in
         </button>
         <br />

@@ -1,11 +1,14 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import UseAuth from "../Hooks/UseAuth";
 
 const Register = () => {
+  const {registerUser} = UseAuth();
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
-    alert("login success");
+    registerUser(data.email, data.password)
+    alert("Register success");
   };
   return (
     <div className="container  Register-container my-5 shadow-lg">
@@ -28,7 +31,7 @@ const Register = () => {
         <input
           className="btn-submit input-btn btn-primary fs-5 rounded"
           type="submit"
-          value="Login"
+          value="Register"
         />
       
         <br />

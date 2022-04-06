@@ -4,7 +4,7 @@ import './Trips.css'
 
 const Trips = () => {
     return (
-        <div className='container' >
+        <div className='container ' >
             <div className='row trips-div'>
                 <div className='col-xs-12 col-sm-12 col-md-6'>
                     <img className='Trips-img' style={{width: "300px"}} src={img} alt="" />

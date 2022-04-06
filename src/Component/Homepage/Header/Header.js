@@ -12,16 +12,16 @@ const Header = () => {
     <Navbar expand={false}>
       <Container fluid >
       <Navbar.Brand className="header-name" to="/home">Bangla Drones</Navbar.Brand>
-        <Link className="header-link" to="/homes">
+        <Link className="header-link header-home" to="/homes">
           Home
         </Link>
 
         {user.email ? (
-          <button className="header-link  logout-btn" onClick={logOut}>
+          <button className="header-link  logout-btn header-login" onClick={logOut}>
             Log-Out
           </button>
         ) : (
-          <Link className="header-link px-2" to="/login">
+          <Link className="header-link px-2 header-login" to="/login">
             Login
           </Link>
         )}

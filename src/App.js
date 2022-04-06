@@ -13,6 +13,7 @@ import Trips from "./Component/Homepage/Trips/Trips";
 import MyOrders from "./Component/MyOrders/MyOrders";
 import ManageAllOrders from "./Component/ManageAllOrders/ManageAllOrders";
 import AddANewService from "./Component/AddANewService/AddANewService";
+import PrivateRoute from "./Component/PrivateRoute/PrivateRoute";
 
 
 function App() {
@@ -29,9 +30,9 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/purchase">
+            <PrivateRoute path="/purchase/:id">
               <Purchase></Purchase>
-            </Route>
+            </PrivateRoute>
             <Route path="/expertise">
               <Expertise></Expertise>
             </Route>

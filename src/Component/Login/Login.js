@@ -1,12 +1,25 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import UseAuth from "../Hooks/UseAuth";
 import './Login.css'
 
 const Login = () => {
+  const location = useLocation();
+  const history = useHistory();
  
   const {signInUsingGoogle, loginUser} = UseAuth();
+  const redirect_uri = location.state?.from || "/homes";
+
+  const handelGoogleLogin = () =>{
+    signInUsingGoogle()
+    .then(result =>{
+    history.push(redirect_uri)
+    })
+    
+    }
 
 
 
@@ -14,7 +27,7 @@ const Login = () => {
 
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
-    loginUser(data.email, data.password)
+    loginUser(data.email, data.password, location, history)
     alert("login success");
   };
   return (
@@ -41,7 +54,7 @@ const Login = () => {
           value="Login"
         />
         <br />
-        <button onClick={signInUsingGoogle} className="btn-submit input-btn btn-primary fs-5 rounded ">
+        <button onClick={handelGoogleLogin} className="btn-submit input-btn btn-primary fs-5 rounded ">
           Google Sign-in
         </button>
         <br />

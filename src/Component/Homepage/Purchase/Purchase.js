@@ -1,18 +1,63 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useParams } from "react-router-dom";
 import "./Purchase.css"
 
 const Purchase = () => {
-    const { register, handleSubmit } = useForm();
+  const [product, setProduct] = useState([]);
+    const { register, handleSubmit, reset } = useForm();
+    const { id } = useParams();
+
+    const item = product.find((pd) => pd.id == id);
+
+    
+
     const onSubmit = (data) => {
-        console.log(data)
-       alert('order successfull')
+      data.orderName = item.name;
+      fetch("http://localhost:5000/orders", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then((result) => {
+            if (result.insertedId) {
+              alert("order successful");
+              reset()
+            }
+
+          });
+        
+       
       };
+
+
+
+
+      useEffect(() => {
+        fetch(`http://localhost:5000/products`)
+          .then((res) => res.json())
+          .then((data) => setProduct(data));
+          
+      }, []);
   return (
     <div className="container">
       <div className="row">
         <div className="col-xs-12 col-sm-12 col-md-6 my-5">
-            <h1>This is products detail</h1>
+        <Card className="h-100 p-3  px-5">
+        <Card.Img variant="top" src={item?.img} />
+        <Card.Body>
+          <Card.Title>Name: {item?.name}</Card.Title>
+          <Card.Title>Price:$ {item?.price}</Card.Title>
+          
+          <Card.Text>Description: {item?.detail}</Card.Text>
+         
+        
+        </Card.Body>
+      </Card>
         </div>
         <div className="col-xs-12 col-sm-12 col-md-6 my-5  from-div">
             
@@ -32,6 +77,11 @@ const Purchase = () => {
               className="order-input my-2"
               {...register("address")}
               placeholder="Write your address"
+            />
+            <input
+              className="order-input my-2"
+              {...register("address")}
+              placeholder="Write your City"
             />
             <input
               className="order-input my-2"

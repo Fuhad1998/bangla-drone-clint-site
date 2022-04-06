@@ -36,10 +36,11 @@ const UseFirebase = () =>{
     
     
     
-    const loginUser = (email, password) =>{
-      signInWithEmailAndPassword(auth, email, password)
+    const loginUser = (email, password, location, history) =>{
+      signInWithEmailAndPassword(auth, email, password, )
     .then((userCredential) => {
-      // Signed in 
+      const destination = location?.state?.from || '/';
+      history.replace(destination);
       const user = userCredential.user;
       setUser(user)
       // ...
@@ -52,9 +53,7 @@ const UseFirebase = () =>{
     
 
     const signInUsingGoogle = () => {
-      signInWithPopup(auth, GoogleProvider).then((result) => {
-        console.log(result.user);
-      });
+      return signInWithPopup(auth, GoogleProvider)
     };
     
     

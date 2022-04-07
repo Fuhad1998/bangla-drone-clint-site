@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import MyOrder from '../MyOrder/MyOrder';
+import { Card } from 'react-bootstrap';
+
 
 
 const MyOrders = () => {
@@ -9,15 +10,51 @@ const MyOrders = () => {
         .then((res) => res.json())
         .then((data) => setmyOrders(data));
     }, []);
+
+    const handelDeleteOrders = id =>{
+      const proceed = window.confirm('Are You Sure You Want TO Delete')
+      if(proceed){
+          const url = `http://localhost:5000/orders/${id}`
+          fetch(url, {
+            method: 'DELETE'
+          })
+          .then(res => res.json())
+          .then(data => {
+            if(data.deletedCount > 0){
+              alert('deleted successful')
+              const remainingUser = myOrders?.filter(order => order._id!==id)
+              setmyOrders(remainingUser)
+            }
+          })
+      }
+
+    
+      
+    }
+    
+
     return (
         <div className='container '>
         <div className='row '>
             <h1 className='p-2'>All Orders</h1>
                 {
-                    myOrders.map(myOrder=><MyOrder
+                    myOrders.map(myOrder=><Card
                     key={myOrder._id}
-                    MyOrder={myOrder}
-                    ></MyOrder>)
+                    myOrder={myOrder}
+                        className="col-xs-12 col-sm-12 col-md-4 px-2 shadow-sm  m-3 "
+                        border="primary"
+                        style={{ width: "20rem" }}
+                      >
+                        <Card.Body>
+                          {/* <Card.Title>Primary Card Title</Card.Title> */}
+                          <Card.Text>Name: {myOrder.name}</Card.Text>
+                          <Card.Text>Email: {myOrder.email}</Card.Text>
+                          <Card.Text>Address: {myOrder.address}</Card.Text>
+                          <Card.Text>OrderName: {myOrder.orderName}</Card.Text>
+                          <Card.Text>Phone Number: {myOrder.number}</Card.Text>
+                          <button onClick={() => handelDeleteOrders(myOrder?._id)}  className="btn btn-warning">Cancel Order</button>
+                        </Card.Body>
+                      </Card>)
                 }
         </div>
     </div>

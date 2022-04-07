@@ -42,11 +42,11 @@ const Header = () => {
           <Offcanvas.Body >
             <Nav className="justify-content-end flex-grow-1 pe-3">
               
-              <Link className="header-link px-2" to="/expertise">
-                Expertise
-              </Link>
               <Link className="header-link px-2" to="/trips">
                 TIPS & ARTICLE
+              </Link>
+              <Link className="header-link px-2" to="/expertise">
+                Expertise
               </Link>
               {
                 user?.email && <Link className="header-link px-2" to="/orders">

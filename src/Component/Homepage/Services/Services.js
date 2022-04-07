@@ -4,9 +4,9 @@ import Service from '../Service/Service';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch(`data.json`)
+        fetch(`http://localhost:5000/products`)
         .then(res => res.json())
-        .then(data => setServices(data))
+        .then(data => setServices(data?.slice(0, 9)))
     }, [])
     return (
         <div className='container'>

@@ -4,13 +4,17 @@ import Services from '../Services/Services';
 import Trips from '../Trips/Trips';
 
 
+
 const Home = () => {
     return (
         <div>
           
           <Banner></Banner>
           <Services></Services>
+          
           <Trips></Trips>
+          
+          
           
           
             

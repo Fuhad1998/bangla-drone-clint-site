@@ -6,7 +6,7 @@ import { Card } from 'react-bootstrap';
 const MyOrders = () => {
     const [myOrders, setmyOrders] = useState([]);
     useEffect(() => {
-      fetch("http://localhost:5000/orders")
+      fetch("https://murmuring-hollows-61224.herokuapp.com/orders")
         .then((res) => res.json())
         .then((data) => setmyOrders(data));
     }, []);
@@ -14,7 +14,7 @@ const MyOrders = () => {
     const handelDeleteOrders = id =>{
       const proceed = window.confirm('Are You Sure You Want TO Delete')
       if(proceed){
-          const url = `http://localhost:5000/orders/${id}`
+          const url = `https://murmuring-hollows-61224.herokuapp.com/orders/${id}`
           fetch(url, {
             method: 'DELETE'
           })

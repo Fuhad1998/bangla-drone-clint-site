@@ -15,7 +15,7 @@ const Purchase = () => {
 
     const onSubmit = (data) => {
       data.orderName = item.name;
-      fetch("http://localhost:5000/orders", {
+      fetch("https://murmuring-hollows-61224.herokuapp.com/orders", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -38,7 +38,7 @@ const Purchase = () => {
 
 
       useEffect(() => {
-        fetch(`http://localhost:5000/products`)
+        fetch(`https://murmuring-hollows-61224.herokuapp.com/products`)
           .then((res) => res.json())
           .then((data) => setProduct(data));
           

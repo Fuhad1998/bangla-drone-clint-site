@@ -11,7 +11,7 @@ const Header = () => {
     
     <Navbar expand={false}>
       <Container fluid >
-      <Navbar.Brand className="header-name" to="/home">Bangla Drones</Navbar.Brand>
+      <Navbar.Brand className="header-name ps-5" to="/home">Bangla Drones</Navbar.Brand>
         <Link className="header-link header-home" to="/homes">
           Home
         </Link>

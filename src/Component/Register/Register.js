@@ -5,10 +5,11 @@ import UseAuth from "../Hooks/UseAuth";
 
 const Register = () => {
   const {registerUser} = UseAuth();
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset} = useForm();
   const onSubmit = (data) => {
     registerUser(data.email, data.password)
     alert("Register success");
+    reset()
   };
   return (
     <div className="container  Register-container my-5 shadow-lg">

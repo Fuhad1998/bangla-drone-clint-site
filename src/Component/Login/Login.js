@@ -28,8 +28,9 @@ const Login = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     loginUser(data.email, data.password, location, history)
-    alert("login success");
+  
     reset()
+    alert("login success");
   };
   return (
     <div className="container  login-container my-5 shadow-lg">

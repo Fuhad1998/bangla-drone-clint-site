@@ -19,7 +19,8 @@ const Footer = () => {
         </h6 >
         <h6 className="text-white">
           {" "}
-          <i className="fas fa-map-marker-alt"> 184 Main uttra Street</i>
+          <i className="fas fa-map-marker-alt"> </i>
+          184 Main Uttara Street
         </h6>
         <h6 className="text-white">
           {" "}
